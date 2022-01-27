@@ -1,0 +1,23 @@
+:root {
+  --clr-violet: hsl(263, 55%, 52%);
+}
+
+body {
+  background-color: var(--clr-violet);
+}
+.html {
+}
+
+.container {
+}
+
+.card {
+}
+
+.card img {
+}
+
+header h2 {
+}
+header p {
+}
