@@ -1,23 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap");
+
 :root {
+  /* Color */
+
   --clr-violet: hsl(263, 55%, 52%);
+  --clr-darkgreyishblue: hsl(217, 19%, 35%);
+  --clr-darkblackishblue: hsl(219, 29%, 14%);
+  --clr-white: hsl(0, 0%, 100%);
+
+  /* Neutral */
+  --clr-lightgray: hsl(0, 0%, 81%);
+  --clr-lightgrayishblue: hsl(210, 46%, 95%);
+
+  --fnt-fontsize: 13px;
+  --fnt-fontfamily: "Barlow Semi Condensed", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  background-color: var(--clr-violet);
+  background-color: var(--clr-lightgray);
+  font-family: var(--fnt-fontfamily);
+  width: 100%;
 }
-.html {
+
+h2 {
+  font-size: .8rem;
+}
+
+p {
+  font-size: var(--fnt-fontsize);
+  font-weight: lighter;
+  line-height: 1.4;
+  opacity: .7;
 }
 
 .container {
+  margin: 2em auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.4em;
 }
 
 .card {
+  background-color: var(--clr-darkgreyishblue);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 1.5em;
+  border-radius: 10px;
+  max-width: 350px;
 }
 
 .card img {
+  border-radius: 50px;
+  border: 2px rgba(160, 64, 184, 0.616) solid;
+  width: 40px;
 }
 
-header h2 {
+/* Card layout and size styling */
+header {
+  display: flex;
+  width: 70%;
+  margin-bottom: 1.2em;
 }
-header p {
+
+.card-header {
+  margin-top: .2em;
+  margin-left: 1em;
 }
+
+.card-names {
+  margin-bottom: .2em;
+}
+
+quote {
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.card-text {
+  margin-top: 1.6em;
+}
+
+/* Color Styling on each card*/
+.one {
+  background-color: var(--clr-violet);
+}
+
+.two {
+  background-color: var(--clr-darkgreyishblue);
+}
+
+.four {
+  background-color: var(--clr-darkblackishblue);
+}
+
+.three,
+.five {
+  background-color: var(--clr-lightgrayishblue);
+}
+/* Card ONE Color Styling */
+.one, p {
+  color: var(--clr-lightgray);
+}
+.one .card-header {
+  color: var(--clr-white);
+}
+.one quote {
+  color: var(--clr-white);
+}
+
+/* Card TWO Color Styling */
+.two, p {
+  color: var(--clr-lightgray);
+}
+.two .card-header {
+  color: var(--clr-white);
+}
+.two quote {
+  color: var(--clr-white);
+}
+
+/* Card THREE Color Styling */
+.three p {
+  color: var(--clr-darkgreyishblue);
+}
+.three .card-header {
+  color: var(--clr-darkgreyishblue);
+}
+.three quote  {
+  color: var(--clr-darkgreyishblue);
+} 
+/* Card FOUR Color Styling */
+.four, p {
+  color: var(--clr-lightgray);
+}
+.four, p {
+  color: var(--clr-white);
+}
+.four, p {
+  color: var(--clr-white);
+}
+/* Card FIVE Color Styling */
+.five p {
+  color: var(--clr-darkgreyishblue);
+}
+.five .card-header {
+  color: var(--clr-darkgreyishblue);
+}
+.five quote  {
+  color: var(--clr-darkgreyishblue);
+} 
